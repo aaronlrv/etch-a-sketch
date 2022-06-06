@@ -1,18 +1,17 @@
 function table(){
-    let table = document.querySelector(".container")
+    let table = document.getElementById("pixelCanvas")
 
     for (i = 0; i < 16; i++){
-    let row = document.createElement("tr")
-    row.id = "row" + i
-    let myRow = document.getElementById("row" + i)
+    let myRow = document.createElement("tr")
+    myRow.className = "gridBoxes"
     
+    table.appendChild(.gridBoxes)
+    let rowW = document.getElementById("row" + i)
 
-    table.appendChild(row)
-
-    for (j = 0; j < 16; i++){
+    for (j = 0; j < 16; j++){
         let myCell = document.createElement("td")
 
-        myRow.appendChild(myCell)
+        rowW.appendChild(myCell)
     }
 }
 }

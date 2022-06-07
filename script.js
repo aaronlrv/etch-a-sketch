@@ -1,7 +1,7 @@
 function table (){
 let table = document.querySelector(".grid-container")
 
-for (i = 0; i < 37; i++){
+for (i = 0; i < 101; i++){
     let myRow = document.createElement("div")
     myRow.className = "gridBoxes"
     table.appendChild(myRow)

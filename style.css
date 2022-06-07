@@ -8,6 +8,6 @@
 .grid-container{
     display: flex;
     flex-direction: row;
-    max-width: 300px;
+    max-width: 335px;
     flex-wrap: wrap;
 }

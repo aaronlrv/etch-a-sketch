@@ -8,6 +8,16 @@
 .grid-container{
     display: flex;
     flex-direction: row;
-    max-width: 335px;
+    max-width: 450px;
     flex-wrap: wrap;
+}
+
+input {
+    width:100px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
 }

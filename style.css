@@ -21,3 +21,7 @@ input {
     flex-direction: row;
     gap:10px;
 }
+
+.black {
+    background-color: black;
+}

@@ -10,14 +10,15 @@ for (i = 0; i < 256; i++){
 
 createTable()
 
-let div = document.querySelectorAll(".gridBoxes")
+let divs = document.querySelectorAll(".gridBoxes")
 
-div.forEach(div => 
+divs.forEach(div => 
 div.addEventListener('mouseenter', function (){ 
-console.log("Inside Div")}))
+div.classList.add('black')
+
+}))
 
 
-div.addEventListener("mouseleave", () =>
-console.log('Mouse Exits'))
+
 
 

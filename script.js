@@ -1,4 +1,4 @@
-function table (){
+function createTable (){
 let table = document.querySelector(".grid-container")
 
 for (i = 0; i < 256; i++){
@@ -8,27 +8,16 @@ for (i = 0; i < 256; i++){
 }
 }
 
+createTable()
 
-/* 1st approach
-function table(){
-    let table = document.getElementById("pixelCanvas")
+let div = document.querySelectorAll(".gridBoxes")
 
-    for (i = 0; i < 16; i++){
-    let myRow = document.createElement("tr")
-    myRow.className = "gridBoxes" 
-    
-    table.appendChild(myRow)
-    let rowW = document.querySelector(".gridBoxes")
+div.forEach(div => 
+div.addEventListener('mouseenter', function (){ 
+console.log("Inside Div")}))
 
-    for (j = 0; j < 16; j++){
-        let myCell = document.createElement("td")
 
-        rowW.appendChild(myCell)
-    }
-}
-}
-
-*/
-table()
+div.addEventListener("mouseleave", () =>
+console.log('Mouse Exits'))
 
 

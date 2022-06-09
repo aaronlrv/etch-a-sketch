@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer> </script>
     <link rel="stylesheet" href = "style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Etch-A-Sketch</title>
 </head>
 
@@ -21,15 +25,29 @@
         <p>Draw away!</p>
     </div>
 
+    <div class="wrapper">
+
+    <div class="input-text">
+        <p>Build your grid here</p>
+    </div>
+
     <div class="inputs">
         <input type="number" id="row" placeholder="Rows" name="quantity" min="1" max="100"/>
         <input type="number" id="column" placeholder="Columns" name="quantity" min="1" max="100"/>
         <button onclick="table()">Submit</button>
     </div>
 
+
     <div class="grid-container">
 
     </div>
+</div>
+    <footer>
+        <div class="footer">
+            <p>Copyright © 2022 Aaron Lawrence
+            </p>
+        </div>
+    </footer>
 
     
 

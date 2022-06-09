@@ -2,7 +2,8 @@
     border-style: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    
   }
 
 html {
@@ -14,16 +15,38 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 .heading-div{
-    margin-bottom: 150px;
     font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 }
+
+.description{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    letter-spacing: 5px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
 .gridBoxes {
     width: 10px;
     height: 10px;
@@ -34,8 +57,9 @@ html {
 .grid-container{
     display: flex;
     flex-direction: row;
-    max-width: 450px;
+    max-width: 750px;
     flex-wrap: wrap;
+    
 }
 
 input {

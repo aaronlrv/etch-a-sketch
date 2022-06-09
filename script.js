@@ -4,7 +4,7 @@ function table () {
     let columns = document.querySelector("#column").value
 
     let i = parseInt(rows)
-    let j =parseInt(columns)
+    let j = parseInt(columns)
 
     console.log(i)
     console.log(j)
@@ -13,18 +13,18 @@ function table () {
 
     let total = i* j
     console.log(total)
-    let squares = total 
-    console.log(squares)
 
 let table = document.querySelector(".grid-container")
 
-for (k = 0; k < squares; k++){
+for (k = 0; k < total; k++){
     let myRow = document.createElement("div")
     myRow.className = "gridBoxes"
     table.appendChild(myRow)
 
+
+
 }
-}
+
 let divs = document.querySelectorAll(".gridBoxes")
 
 divs.forEach(div => 
@@ -32,6 +32,9 @@ div.addEventListener('mouseenter', function (){
 div.classList.add('black')
 
 }))
+}
+
+
 
 
 

@@ -1,13 +1,17 @@
 function userInput (){
-    let rows = document.querySelector("#row")
-    let columns = document.querySelector("#column")
+    let rows = document.querySelector("#row").value
+    let columns = document.querySelector("#column").value
 
-    if (rows < 101 || columns < 101){
-        let i = rows
-        let j = columns
-    } else {
-        alert("Selection for row and columns were too high!")
-    }
+    let i = parseInt(rows)
+    let j =parseInt(columns)
+
+    console.log(i)
+    console.log(j)
+    console.log(typeof(i))
+    console.log(typeof(j))
+
+    let total = i* j
+    console.log(total)
 }
 
 
@@ -22,7 +26,6 @@ for (i = 0; i * j < 10001; i++){
 }
 }
 
-createTable()
 
 let divs = document.querySelectorAll(".gridBoxes")
 

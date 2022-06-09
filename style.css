@@ -75,3 +75,15 @@ input {
 .black {
     background-color: black;
 }
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    margin-top: auto;
+    background-color: #B6B4BB;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}

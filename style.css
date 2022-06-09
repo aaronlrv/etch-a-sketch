@@ -6,17 +6,18 @@
     
   }
 
-html {
-    height: 100%;
-    background-color: #EAEAEA;
-}
+  html, body {
+      min-height: 100vh; 
+      min-width: 100vw;
+    }
 
-.etch-a-sketch {
+body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    background-color: #EAEAEA;
 }
+
 
 .heading-div{
     font-size: 35px;
@@ -30,7 +31,7 @@ html {
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .heading {
@@ -41,26 +42,30 @@ html {
 .wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 15px;
 }
 
 
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    max-height: 700px;
+    max-width: 700px;
+    width: auto;
+    flex-wrap: wrap;
+    
+}
+
 .gridBoxes {
-    width: 10px;
+    flex: 1 10px;
     height: 10px;
     border-style: solid;
     border-width: 1px;
 }
 
-.grid-container{
-    display: flex;
-    flex-direction: row;
-    max-width: 750px;
-    flex-wrap: wrap;
-    
-}
 
 input {
     width:100px;
@@ -78,9 +83,6 @@ input {
 
 .footer{
     display: flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;
     margin-top: auto;
     background-color: #B6B4BB;
     height: 50px;

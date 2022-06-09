@@ -36,10 +36,10 @@ divs.forEach(div =>
 div.addEventListener('mouseenter', function (){ 
 div.classList.add('black')
 
+return
 }))
 
 }
-
 
 
 
